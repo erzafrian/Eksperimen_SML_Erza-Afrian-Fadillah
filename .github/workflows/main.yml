@@ -36,8 +36,8 @@ jobs:
     # 5. Commit dan Push dataset hasil proses kembali ke repo
     - name: Commit and Push Processed Data
       run: |
-        git config --global user.name "erzafadil@gmail.com"
-        git config --global user.email "erzafrian"
+        git config --global user.name "erzafrian"
+        git config --global user.email "erzafadil@gmail.com"
         git add customer_behavior_processed.csv
         git commit -m "Update processed dataset [automated]" || echo "No changes to commit"
         git push
