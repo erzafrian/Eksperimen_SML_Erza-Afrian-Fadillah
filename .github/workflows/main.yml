@@ -31,7 +31,7 @@ jobs:
 
     # 4. Jalankan skrip preprocessing
     - name: Run Preprocessing Script
-      run: python automate_Nama-siswa.py
+      run: python automate_Erza-Afrian-Fadillah.py
 
     # 5. Commit dan Push dataset hasil proses kembali ke repo
     - name: Commit and Push Processed Data
