@@ -100,4 +100,4 @@ if __name__ == "__main__":
         preprocessor = DataPreprocessor(input_file)
         X_train, X_test, y_train, y_test = preprocessor.run_pipeline()
     except Exception as e:
-        print(f"Terjadi kesalahan: {e}")
+        print(f"Error: {e}")
