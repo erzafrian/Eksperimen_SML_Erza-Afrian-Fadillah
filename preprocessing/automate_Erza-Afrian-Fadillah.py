@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -76,6 +77,10 @@ class DataPreprocessor:
         # Menambahkan kembali kolom target 
         processed_df['Customer_Rating'] = self.y_train.values
         
+        # MENYIMPAN KE FILE
+        processed_df.to_csv(output_filename, index=False)
+        print(f"Data hasil preprocessing disimpan ke: {output_filename}")
+        
 
     def run_pipeline(self):
         """Menjalankan seluruh tahapan preprocessing secara otomatis."""
@@ -93,7 +98,7 @@ class DataPreprocessor:
 
 # Fungsi Utama
 if __name__ == "__main__":
-    input_file = 'Eksperimen_SML_Erza-Afrian-Fadillah\customer_behavior.csv' 
+    input_file = 'Eksperimen_SML_Erza-Afrian-Fadillah/customer_behavior_cleaned.csv' 
     
     # Jalankan otomatisasi
     try:
