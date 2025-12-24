@@ -31,7 +31,7 @@ jobs:
 
     # 4. Jalankan skrip preprocessing
     - name: Run Preprocessing Script
-      run: python Eksperimen_SML_Erza-Afrian-Fadillah/preprocessing/automate_Erza-Afrian-Fadillah.py
+      run: python preprocessing/automate_Erza-Afrian-Fadillah.py
 
     # 5. Commit dan Push dataset hasil proses kembali ke repo
     - name: Commit and Push Processed Data
